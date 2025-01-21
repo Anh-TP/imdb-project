@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" th:href="@{/style.css}">
+  <title>Movies Database</title>
+</head>
+<body>
+<h1>Movies</h1>
+<form class="search-form" action="/movies" method="get">
+  <input type="text" name="query" placeholder="Search...">
+  <button type="submit">Search</button>
+</form>
+<table>
+  <thead>
+  <tr>
+    <th>Movie Title</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr th:each="movie : ${listMovies}">
+    <td th:text="${movie.primaryTitle}"></td>
+  </tr>
+  </tbody>
+</table>
+</body>
+</html>

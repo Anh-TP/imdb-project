@@ -17,13 +17,13 @@ import lombok.NoArgsConstructor;
 public class Movie {
 
     @Id
-    @GeneratedValue(strategy=GenerationType.AUTO)
-    private Long id;
-    private String movieTitle;
-
-    public Movie(String movieTitle) {
-        this.movieTitle = movieTitle;
-    }
-
-
+    private String tconst;
+    private String titleType;
+    private String primaryTitle;
+    private String originalTitle;
+    private boolean isAdult;
+    private Integer startYear;
+    private Integer endYear;
+    private Integer runtimeMinutes;
+    private String genres;
 }
