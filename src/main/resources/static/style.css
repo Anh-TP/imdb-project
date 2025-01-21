@@ -1,11 +1,25 @@
-.search-form {
-  display: flex;
-  flex-direction: column;
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+margin: 0 auto;
+font-family: "Bebas Neue", sans-serif;
+text-align: center;
+align-items: center;
+box-sizing: border-box;
 }
 
-.search-form input {
-  padding: 12px;
-  margin: 8px;
+.container {
+padding: 20px;
+}
+.search-bar {
+  display: flex;
+  flex-direction: column;
+  font-size:16px
+}
+
+.search-bar input {
+  padding: 12px 50px;
+  margin: 20px;
   border: none;
   border-radius: 5px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
@@ -21,6 +35,6 @@ button {
   cursor: pointer;
 }
 
-.search-form button:hover {
-  background-color: #2980b9;
+.search-bar button:hover {
+  background-color: #2981b9;
 }
